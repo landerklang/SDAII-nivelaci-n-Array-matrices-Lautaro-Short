@@ -5,8 +5,6 @@ i=0
 Totalalumno=[]
 
 while i!=Cantidadalumno:
-
-    print(i)
     alumno=[]
     alumno.append(input("Nombre: "))
     alumno.append(int(input("Edad: ")))
@@ -14,7 +12,7 @@ while i!=Cantidadalumno:
     Totalalumno.append(alumno)
     notamayor.append(Totalalumno[i][2])
     Totalnota=promedio+alumno[2]
-    i=i+1
+    i += 1
 if Cantidadalumno==0:
     print("no hay alumnos")
 notamayor.sort(reverse=True)
